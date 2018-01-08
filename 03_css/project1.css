@@ -1,79 +1,93 @@
-@font-face{
-font-family:"chaennie8";
+@font-face {
+font-family:"chaennie";
 src: url('https://dl.dropboxusercontent.com/s/9jhv2y3v1ky37yp/so.otf');
 }
  
-@font-face{
-font-family:"chaennie9";
-src: url('https://dl.dropboxusercontent.com/s/kz3iqc070yg0sxs/bj.otf');
-}
- 
-@font-face{
-font-family:"chaennie10";
-src: url('https://dl.dropboxusercontent.com/s/ppob0yhtg6w6odf/vst.ttf');
+* {
+    margin: 0;
+    padding: 0;
 }
 
-*{
-    margin:0;
-    padding:0;
-}
-html, body{
-    height:100%;
+html, body {
+    height: 100%;
 }
 
-body{
+body {
     text-align: center;
     color: grey;
-    background: transparent;
+    background: black;
     padding-top: 1px;
     margin-top: -1px;
 }
 
 h1 {
-	font-family: 'chaennie8';
+	font-family: 'chaennie';
 	color: rgba(0,0,255);
 	font-size: 3em;
 }
 
+.verse {
+    margin-bottom: 3em;
+    text-transform: uppercase;
+}
+
 
 .line-1 {
-	color: grey;
-	font-family: Times New Roman, italic;
+	font-family: italic;
 	line-height: 100%;
 
 }
 
-body, html {
-    height: 100%;
+#go-back {
+    font-family: 'chaennie';
+    text-transform: lowercase;
 }
 
-/* The image */
-.hero-image {
-    /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1501045337096-542a73dafa4f?auto=format&fit=crop&w=1634&q=80");
+.header {
+     animation: colorchange 30s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 30s; /* Chrome and Safari */
+    }
 
-    /* Set a specific height */
-    height: 100%;
-    width: 50%;
-    left: 0%;
+    @keyframes colorchange
+    {
+      0%   {background: pink;}
+      25%  {background: pink;}
+      50%  {background: lightblue;}
+      75%  {background: lightblue;}
+      100% {background: white;}
+    }
 
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relati;
-}
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: pink;}
+      25%  {background: pink;}
+      50%  {background: lightblue;}
+      75%  {background: lightblue;}
+      100% {background: white;}
+    }
 
-/* Place text in the middle of the image */
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: pink;
-}
+    /* The image */
+    .header-image {
+        /* Set a specific height */
+        height: 100%;
+        width: 100%;
+        left: 0%;
 
-.italic {
-	font-family: italicize;
-}
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Place text in the middle of the image */
+    .header-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: pink;
+        text-transform: lowercase;
+    }
