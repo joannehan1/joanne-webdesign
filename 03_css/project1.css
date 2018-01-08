@@ -12,24 +12,25 @@ src: url('https://dl.dropboxusercontent.com/s/kz3iqc070yg0sxs/bj.otf');
 font-family:"chaennie10";
 src: url('https://dl.dropboxusercontent.com/s/ppob0yhtg6w6odf/vst.ttf');
 }
- 
- 
-b, strong {
-font-weight:bold;
-color:#6c4b45; /* BOLD/STRONG COLOR */
+
+*{
+    margin:0;
+    padding:0;
 }
- 
-a {
-color:#ad9991; /* LINK COLOR */
+html, body{
+    height:100%;
 }
 
-* {
- 	text-align: center;
- 	font-family: Helvetica, Arial; 
+body{
+    text-align: center;
+    color: grey;
+    background: transparent;
+    padding-top: 1px;
+    margin-top: -1px;
 }
 
 h1 {
-	font-family: 'chaennie8', Times New Roman, cursive;
+	font-family: 'chaennie8';
 	color: rgba(0,0,255);
 	font-size: 3em;
 }
@@ -46,19 +47,21 @@ body, html {
     height: 100%;
 }
 
-/* The hero image */
+/* The image */
 .hero-image {
     /* The image used */
     background-image: url("https://images.unsplash.com/photo-1501045337096-542a73dafa4f?auto=format&fit=crop&w=1634&q=80");
 
     /* Set a specific height */
     height: 100%;
+    width: 50%;
+    left: 0%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relati;
 }
 
 /* Place text in the middle of the image */
@@ -68,25 +71,9 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: pink;
 }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-
-button:click {
-	jump: #down;
+.italic {
+	font-family: italicize;
 }
