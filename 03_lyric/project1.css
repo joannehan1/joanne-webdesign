@@ -14,17 +14,46 @@ html, body {
 
 body {
     text-align: center;
+    font-family: helvetica;
     color: grey;
     background: black;
     padding-top: 1px;
     margin-top: -1px;
 }
 
+/* index page */
 h1 {
 	font-family: 'chaennie';
 	color: rgba(0,0,255);
 	font-size: 3em;
 }
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: none;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: small;
+  color: #fff;
+  } 
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  } 
+a:hover {
+  /* Applies to links under the pointer */
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+  } 
+a:activated {
+  /* Applies to activated links */
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  } 
+
 
 .verse {
     margin-bottom: 3em;
@@ -37,19 +66,15 @@ h1 {
 
 }
 
-#go-back {
-    padding: 50%, 50%;
-    margin-top: 10em;
-    margin-bottom: 10em;
-    font-family: 'chaennie';
-    text-transform: lowercase;
-}
 
+/* index page */
+/* 
 .header {
     background-color: #000;
-}
+} */
 
 .window {
+    background-color: #000;
     animation: colorchange 50s; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
     -webkit-animation: colorchange 50s; /* Chrome and Safari */
