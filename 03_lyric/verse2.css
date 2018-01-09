@@ -1,0 +1,117 @@
+@font-face {
+font-family:"chaennie";
+src: url('https://dl.dropboxusercontent.com/s/9jhv2y3v1ky37yp/so.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 80%;
+}
+
+body {
+    text-align: center;
+    font-family: times new roman;
+    color: white;
+    background: #365e9d;
+    padding-top: 25%;
+    margin-top: -1px;
+    font-size: 20px;
+
+    animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #eee;}
+      100% {background: #365e9d;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #eee;}
+      100% {background: #365e9d;}
+    }
+}
+
+p {
+  line-height: 5em;
+  font-size: 1em;
+}
+
+/* index page */
+h1 {
+  font-weight: normal;
+	font-family: 'chaennie';
+	color: rgba(0,0,255);
+	font-size: 3em;
+}
+/* end index page*/
+
+.pretty {
+  font-family: 'chaennie';
+  font-size: 2em;
+  color: #ffd88b;
+  margin: 0 15px;
+}
+
+.candle {
+  color: #ffd88b;
+}
+
+.black {
+  color: black;
+}
+
+.blue {
+  color: #6291ad;
+}
+
+img {
+  width: 150px;
+}
+
+div {
+  margin-bottom: 50%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.chorus {
+  background: linear-gradient(to bottom, #365e9d 0%, black 100%);
+  line-height: 9em;
+  margin-bottom: 30%;
+}
+
+.hard-feelings {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 9em;
+  color: #6291ad;
+}
+
+.last {
+  color: #ccc;
+}
+
+.lastly {
+  color: grey;
+}
+
+#ending {
+  background: linear-gradient(to bottom, black 0%, black 100%);
+}
+
+#bottom {
+  background: black;
+  padding-bottom: 100%;
+}
+
+

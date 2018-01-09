@@ -1,0 +1,118 @@
+@font-face {
+font-family:"chaennie";
+src: url('https://dl.dropboxusercontent.com/s/9jhv2y3v1ky37yp/so.otf');
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: times new roman;
+    color: black;
+    background: #eee;
+    padding-top: 25%;
+    margin-top: -1px;
+    font-size: 20px;
+
+    animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: black;}
+      100% {background: #eee;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: black;}
+      100% {background: #eee;}
+    }
+}
+
+p {
+  line-height: 5em;
+  font-size: 1em;
+}
+
+/* index page */
+h1 {
+  font-weight: normal;
+	font-family: 'chaennie';
+	color: rgba(0,0,255);
+	font-size: 3em;
+}
+/* end index page*/
+
+.pretty {
+  font-family: 'chaennie';
+  font-size: 2em;
+  color: black;
+  margin: 0 15px;
+}
+
+.winter {
+  color: #6699ff;
+}
+
+.pink {
+  color: pink;
+}
+
+.grey{
+  color: grey;
+}
+
+
+img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 48%;
+  left: 58%;
+}
+
+div {
+  margin-bottom: 50%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.pre-chorus {
+  border: solid pink;
+  padding: 50 50;
+  margin-left: 25%; 
+  margin-right: 25%;
+}
+
+.chorus {
+  background: linear-gradient(to bottom, #eee 0%, #99ccff 50%, pink 100%);
+  line-height: 9em;
+  margin-bottom: 30%;
+}
+
+.hard-feelings {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 9em;
+  color: #eee;
+}
+
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: underline italic;
+  font-weight: bold;
+  color: black;
+  } 
