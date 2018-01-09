@@ -99,6 +99,10 @@ div {
   text-decoration: line-through;
 }
 
+.italics {
+  font-style: italic;
+}
+
 .chorus {
   background: linear-gradient(to bottom, #365e9d 0%, black 100%);
   line-height: 9em;
