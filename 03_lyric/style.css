@@ -23,15 +23,9 @@ body {
 }
 
 /* index page */
-h1 {
+span {
 	font-family: 'chaennie';
 	color: rgba(0,0,255);
-	font-size: 3em;
-}
-/* end index page*/
-
-/* index page */
-.title-text {
   font-size: 2em;
 }
 /* end index page*/
