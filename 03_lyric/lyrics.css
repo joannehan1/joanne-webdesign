@@ -65,8 +65,13 @@ h1 {
 }
 
 .pink {
-  color: #ff99cc;
+  color: pink;
 }
+
+.grey{
+  color: grey;
+}
+
 
 img {
   height: 50px;
@@ -82,6 +87,13 @@ div {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.pre-chorus {
+  border: solid pink;
+  padding: 50 50;
+  margin-left: 25%; 
+  margin-right: 25%;
 }
 
 .chorus {
@@ -138,3 +150,10 @@ div {
         opacity: 1;
     }
 }
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: underline italic;
+  font-weight: bold;
+  color: black;
+  } 
