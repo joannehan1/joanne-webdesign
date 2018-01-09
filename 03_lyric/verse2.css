@@ -44,6 +44,21 @@ p {
   font-size: 1em;
 }
 
+section{
+/*    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px;*/
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.flower-image{
+    max-height: 140px;
+    width: auto;
+    overflow: hidden;
+}
+
 /* index page */
 h1 {
   font-weight: normal;
