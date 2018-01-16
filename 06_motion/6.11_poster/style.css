@@ -4,6 +4,16 @@ body {
 	background-color: #c2bfae;
 }
 
+@keyframes colora {
+    from {background-color: rgba(65, 107, 109, .5);}
+    to {background-color: rgba(99, 60, 33, .5);}
+}
+
+@keyframes colorb {
+    from {background-color: rgba(99, 60, 33, .5);}
+    to {background-color: rgba(65, 107, 109, .5);}
+}
+
 section {
 	display:flex;
 	justify-content: center;
@@ -39,10 +49,18 @@ section {
 
 .blue {
 	background: rgba(65, 107, 109, .5);
+	animation-name: colora;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .brown {
 	background: rgba(99, 60, 33, .5);
+	animation-name: colorb;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 
