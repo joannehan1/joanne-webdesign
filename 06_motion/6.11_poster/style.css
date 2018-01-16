@@ -34,10 +34,17 @@ section {
 	background: rgba(99, 60, 33, .5);
 }
 
+
+#one {
+	margin-top: -100px;
+	margin-bottom: 5px;
+}
+
 .two {
 	flex-direction: row; 
 	margin-right: 205px;
 }
+
 
 .three {
 	flex-direction: row; 
@@ -45,23 +52,19 @@ section {
 	margin-top: -100px;
 }
 
-#one {
-	margin-top: -100px;
-	margin-bottom: 5px;
-}
-
 
 h1 {
 	line-height: .5em;
 	font-weight: bold;
-	color: black;
-	font-size: 3em;
 }
 
 .info {
 	text-align: left;
-	color: #003a44;
 	font-family: Helvetica, sans-serif;
-	font-size: .5em;
 }
 
+.little {
+	color: #003a44;
+	font-size: .5em;
+	margin-top: 5em;
+}
