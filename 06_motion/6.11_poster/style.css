@@ -25,13 +25,17 @@ section {
      margin-top: 5px;
 }
 
+.left {
+	height: 200px;
+	width: 100px;
+	border-radius: 200px 0 0 200px;
+	margin-left:5px;
+}
+
 .main .circle {
 	margin-top: -100px;
 }
 
-/*.blue {
-	background: rgba(91, 124, 126, .5);
-}*/
 
 .blue {
 	background: rgba(65, 107, 109, .5);
@@ -55,7 +59,7 @@ section {
 
 .three {
 	flex-direction: row; 
-	margin-left: 205px;
+	margin-left: 105px;
 	margin-top: -100px;
 }
 
