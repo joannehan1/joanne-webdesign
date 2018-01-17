@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing:border-box;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+	filter: brightness(.8);
+  height: 200px;
+  padding: 4px;
+}
+
+/* Caption text */
+.text {
+  color: rgb(0, 200, 255);
+  font-size: 24px;
+  font-family: Courier, serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 250px 12px;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+
+.orange {
+	color: orange;
+}
+
+.orange:hover {
+	color: transparent;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
