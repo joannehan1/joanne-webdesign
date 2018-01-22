@@ -17,9 +17,18 @@ for (var n = 1; n <= 100; n++) {
 } */
 
 ///* exercise 3
-var board = '';
+var board = "";
+var size = 8;
 
-for (var k=1; k<9; k++) {
-	console.log(k);
+for (var y = 0; y < size; y++) {
+  for (var x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0)
+      board += " ";
+    else
+      board += "#";
+  }
+  board += "\n";
 }
+
+console.log(board);
 	//*/
