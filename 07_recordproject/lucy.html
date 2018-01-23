@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>lucy.</title>
+	<meta name="keywords" content="sortable, reorder, list, javascript, html5, drag and drop, dnd, animation, groups, angular, ng-sortable, react, mixin, effects, rubaxa"/>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+	<link href="lucy.css" rel="stylesheet" type="text/css"/>
+	<link href="http://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<a href="index.html" class=link><h2>⬅</h2></a>
+	<h1>how is lucy's 2018 going?</h1>
+	<span>go ahead and sort the images from her stories.</span>
+	<!-- Multi connected lists -->
+	<a name="m"></a>
+	<div class="container">
+		<div id="multi" style="margin-left: 40px">
+			<div class="tilefirst" data-force="30">
+				<div class="tile__list">
+			          <img src="lucy/a.jpg"/>
+			          <img src="lucy/b.jpg"/>
+			          <img src="lucy/c.jpg"/>
+			          <img src="lucy/d.jpg"/>
+			          <img src="lucy/e.jpg"/>
+			          <img src="lucy/f.jpg"/>
+			          <img src="lucy/g.jpg"/>
+			          <img src="lucy/h.jpg"/>
+			          <img src="lucy/i.jpg"/>
+			          <img src="lucy/j.jpg"/>
+			          <img src="lucy/k.jpg"/>
+			          <img src="lucy/l.jpg"/>
+				</div>
+			</div>
+			<br />
+		<section>
+			<div class="tile" data-force="30">
+				<img class="cat" src="images/happy.png"/>
+				<div class="tile__list">
+				</div>
+			</div>
+
+			<div class="tile" data-force="25">
+				<img class="cat" src="images/meh.png"/>
+				<div class="tile__list">
+				</div>
+			</div>
+
+			<div class="tile" data-force="20">
+				<img class="cat" src="images/sad.png"/>
+				<div class="tile__list">
+				</div>
+			</div>
+		</section>
+		</div>
+	</div>
+
+	<form>
+		<center>
+		<input type="button" onClick="history.go(0)" value="reset">
+		</center>
+	</form>
+
+	<script src="js/Sortable/Sortable.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
