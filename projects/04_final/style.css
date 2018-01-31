@@ -1,4 +1,135 @@
-html {
+@import url('https://fonts.googleapis.com/css?family=Supermercado+One');
+
+* {
+  background-color: #000;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contain {
+	flex-direction: row;
+	background-color: transparent;
+}
+
+div {
+	margin: auto;
+}
+
+.food {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+}
+
+ .microwave {
+    width: 300px;
+    height: 150px;
+    background: #999;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+ .freezer {
+    width: 300px;
+    height: 150px;
+    background: #999;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+ .fridge {
+    width: 300px;
+    height: 350px;
+    background: #999;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+#txt {
+	color: red;
+	font-family: 'Supermercado One', cursive;
+	text-align: center;
+	font-size: 4em;
+	font-style: italic;
+	margin: 5%;
+}
+
+#flick {
+  animation: text-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 20px red;
+  }
+ 
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red;
+  }
+  8% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red;
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red;
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px red;
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 20px red
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red
+  }
+ 
+  70% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red
+  }
+ 
+  72% {
+    opacity:.4;
+    text-shadow:0px 0px 20px red
+  }
+ 
+  77% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red
+  }
+  100% {
+    opacity:1;
+    text-shadow: 0px 0px 20px red
+  }}
+
+#banana {
+	color: red;
+	text-align: center;
+	font-size: 4em;
+	margin: 5%;
+}
+
+/*html {
 	background-color:#e5efff;
 }
 
@@ -48,6 +179,7 @@ form {
 	padding-top: 50px;
 }
 
+
 .tilefirst {
 	width: 90%;
 	min-width: 245px;
@@ -91,4 +223,4 @@ form {
 			cursor: move;
 			margin: 10px;
 			border-radius: 100%;
-		}
+		}*/

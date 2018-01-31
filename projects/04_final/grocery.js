@@ -1,13 +1,19 @@
+$( ".food" ).draggable();
 
-$(document).mousemove(function(e) {
-            $('.fork').offset({
-        left: e.pageX,
-        top: e.pageY + 05
-                });
-            });
-$(document).ready(function() {
-    $('.product').draggable();
-    $('.product').click(function() {
-    $(this).fadeOut('fast');
-                    });
-                });
+$( ".microwave" ).droppable({
+  drop: function() {
+    alert( "heating" );
+  }
+});
+
+$( ".freezer" ).droppable({
+  drop: function() {
+    alert( "freezing" );
+  }
+});
+
+$( ".fridge" ).droppable({
+  drop: function() {
+    alert( "chilling" );
+  }
+});
