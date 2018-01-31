@@ -2,29 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>late night snacks.</title>
+  <title>snacks.</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body onload="startTime()">
+<div id="spotLight"></div>
 <span id="flick"><div id="txt"></div></span>
 <section class="unit"> 
 	<div class="microwave">  microwave!</div>
 	<div class="freezer">freezer!</div>
 	<div class="fridge">fridge!
 		<section class="contain">
-		<div class="food">food!</div>
-		<div class="food">food!</div>
-		<div class="food">food!</div>
+		<div id="morning">banana!</div>
+		<div id="midday">sandwich!</div>
+		<div id="night">pizza!</div>
 		</section> 
 	</div>
 </section>
  
-<script src="grocery.js">
+<script src="script.js">
 </script>
-<script src="time.js"></script>
+<!--
+<script src="spotlight.js"></script>
+-->
  
 </body>
 </html>
