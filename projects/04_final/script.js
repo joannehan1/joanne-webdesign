@@ -1,5 +1,7 @@
 /* get time */
-$(document).ready(function startTime() {
+
+
+function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -7,7 +9,8 @@ $(document).ready(function startTime() {
     document.getElementById('txt').innerHTML =
     h + ":" + m 
     var t = setTimeout(startTime, 500);
-});
+}
+
 
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
@@ -38,28 +41,31 @@ if (t < 10) {
     midday.style.display = "none";
     night.style.display = "block";
 }
+$(document).ready(function(){
+    startTime();
+    /* be able to drag food */
+    $( "#morning" ).draggable();
+    $( "#midday" ).draggable();
+    $( "#night" ).draggable();
 
-/* be able to drag food */
-$( "#morning" ).draggable();
-$( "#midday" ).draggable();
-$( "#night" ).draggable();
+    /* be able to drop foods into appliances */
+    $( ".microwave" ).droppable({
+      drop: function() {
+        console.log("heating");
+      }
+    });
 
-/* be able to drop foods into appliances */
-$( ".microwave" ).droppable({
-  drop: function() {
-    console.log("heating");
-  }
-});
+    $( ".freezer" ).droppable({
+      drop: function() {
+        console.log( "freezing" );
+      }
+    });
 
-$( ".freezer" ).droppable({
-  drop: function() {
-    console.log( "freezing" );
-  }
-});
+    $( ".fridge" ).droppable({
+      drop: function() {
+        console.log( "chilling" );
+      }
+    });
 
-$( ".fridge" ).droppable({
-  drop: function() {
-    console.log( "chilling" );
-  }
 });
 
