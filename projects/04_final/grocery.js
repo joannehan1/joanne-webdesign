@@ -2,18 +2,18 @@ $( ".food" ).draggable();
 
 $( ".microwave" ).droppable({
   drop: function() {
-    alert( "heating" );
+    console.log("heating");
   }
 });
 
 $( ".freezer" ).droppable({
   drop: function() {
-    alert( "freezing" );
+    console.log( "freezing" );
   }
 });
 
 $( ".fridge" ).droppable({
   drop: function() {
-    alert( "chilling" );
+    console.log( "chilling" );
   }
 });
