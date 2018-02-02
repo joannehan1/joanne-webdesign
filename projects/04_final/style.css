@@ -13,9 +13,9 @@ section {
   justify-content: center;
 }
 
-.contain {
-	flex-direction: row;
-	background-color: transparent;
+.open {
+  position: absolute;
+  z-index: -10;
 }
 
 div {
@@ -41,6 +41,63 @@ div {
     background: #ccc;
 }
 
+.microwave {
+  width: 655px;
+  height: 130px;
+  background: url(images/closed.png) -137px 0px;
+}
+
+.freezer {
+  width: 655px;
+  height: 155px;
+  background: url(images/closed.png) -137px -130px;
+}
+
+.fridge {
+  width: 655px;
+  height: 315px;
+  background: url(images/closed.png) -137px -285px;
+}
+
+#microwave {
+    width: 655px;
+    height: 130px;
+    background: url(images/microwave.png) -137px 0px;
+}
+
+#freezer {
+    width: 655px;
+    height: 155px;
+    background: url(images/open.png) -137px -130px;
+}
+
+#fridge {
+    width: 655px;
+    height: 315px;
+    background: url(images/open.png) -137px -285px;
+}
+
+/*
+.openmicrowave {
+  width: 655px;
+  height: 130px;
+  background: url(images/open.png) -137px 0px;
+}
+
+.openfreezer {
+  width: 655px;
+  height: 155px;
+  background: url(images/open.png) -137px -130px;
+}
+
+.openfridge {
+  width: 655px;
+  height: 315px;
+  background: url(images/open.png) -137px -285px;
+}
+*/
+
+/*
  .microwave {
     width: 300px;
     height: 150px;
@@ -64,6 +121,7 @@ div {
     padding: 10px;
     border: 1px solid green;
 }
+*/
 
 #txt {
 	color: red;
