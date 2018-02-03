@@ -53,8 +53,18 @@ $(document).ready(function(){
     $( ".pbj" ).draggable();
     $( ".pizza" ).draggable();
 
-
+    // make microwave off at first
     $( "#microwave" ).hide();
+
+    $( ".muffin" ).dblclick(function() {
+        $(this).fadeOut('fast');
+        });
+    $( ".pbj" ).dblclick(function() {
+        $(this).fadeOut('fast');
+        });
+    $( ".pizza" ).dblclick(function() {
+        $(this).fadeOut('fast');
+        });
 
     /* be able to drop foods into appliances */
     $( ".microwave" ).droppable({
@@ -87,3 +97,26 @@ $(document).ready(function(){
       }
     });
 });
+
+/*
+$(document).ready(function() {
+            $('.eggs').click(function() {
+                $(this).fadeOut('fast');
+                    });
+                });
+        $(document).ready(function() {
+            $('.bacon').click(function() {
+                $(this).fadeOut('fast');
+                    });
+                });
+        $(document).ready(function() {
+            $('.waffle').click(function() {
+                $(this).fadeOut('fast');
+                    });
+                });
+        $(document).ready(function() {
+            $('.fruit').click(function() {
+                $(this).fadeOut('fast');
+                    });
+                });
+*/

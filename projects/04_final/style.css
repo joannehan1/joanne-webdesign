@@ -4,19 +4,20 @@
   margin: 0;
   box-sizing: border-box;
   justify-content: center;
+  font-color: black;
+  font-family: 'Supermercado One', cursive;
 }
 
 section {
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
 }
 
 div {
 	margin: auto;
-	font-color: black;
 }
 
 img {
