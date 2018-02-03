@@ -7,11 +7,11 @@
 }
 
 section {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
 }
 
 div {
