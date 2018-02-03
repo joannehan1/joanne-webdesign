@@ -41,30 +41,69 @@ if (t < 10) {
     midday.style.display = "none";
     night.style.display = "block";
 }
+
+$(document).ready(function() {
+	$('.fridge').mouseenter(function() {
+		//$('.fridge').hide();
+		$('#fridge').show();
+		console.log('mouse detected')
+	});
+	$('.fridge').mouseleave(function() {
+		//$('.fridge').show();
+		$('#fridge').hide();
+		console.log('mouse gone')
+	})
+});
+
+$(document).ready(function() {
+	$('.freezer').mouseenter(function() {
+		//$('.fridge').hide();
+		$('#freezer').show();
+		console.log('mouse detected')
+	});
+	$('.freezer').mouseleave(function() {
+		//$('.fridge').show();
+		$('#freezer').hide();
+		console.log('mouse gone')
+	});
+});
+
 $(document).ready(function(){
     startTime();
     /* be able to drag food */
     $( "#morning" ).draggable();
     $( "#midday" ).draggable();
     $( "#night" ).draggable();
+    $( "#microwave" ).hide();
 
     /* be able to drop foods into appliances */
     $( ".microwave" ).droppable({
       drop: function() {
         console.log("heating");
+        $(this).hide();
+		$('#microwave').show();
       }
     });
 
     $( ".freezer" ).droppable({
       drop: function() {
         console.log( "freezing" );
+        $( "#microwave" ).hide();
+        $('.microwave').show();
       }
     });
 
     $( ".fridge" ).droppable({
       drop: function() {
         console.log( "chilling" );
+        $( "#microwave" ).hide();
+        $('.microwave').show();
       }
     });
 });
+
+
+// popup window for each page end
+
+
 

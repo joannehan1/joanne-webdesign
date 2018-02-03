@@ -36,9 +36,7 @@ div {
 }
 
 #night {
-    width: 100px;
-    height: 100px;
-    background: #ccc;
+	width: 100px;
 }
 
 .microwave {
@@ -68,13 +66,13 @@ div {
 #freezer {
     width: 655px;
     height: 155px;
-    background: url(images/open.png) -137px -130px;
+    background: url(images/open.png) -135px -130px;
 }
 
 #fridge {
     width: 655px;
     height: 315px;
-    background: url(images/open.png) -137px -285px;
+    background: url(images/open.png) -135px -285px;
 }
 
 /*
