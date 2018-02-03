@@ -5,7 +5,8 @@
   box-sizing: border-box;
   justify-content: center;
   font-color: black;
-  font-family: 'Supermercado One', cursive;
+  font-family:'Supermercado One', cursive;
+  text-align: center;
 }
 
 section {
@@ -70,7 +71,11 @@ img {
 	text-align: center;
 	font-size: 4em;
 	font-style: italic;
-	margin: 5%;
+	margin-top: 5%;
+}
+
+p {
+  margin-bottom: 3%;
 }
 
 /* dramatic lighting!!! */

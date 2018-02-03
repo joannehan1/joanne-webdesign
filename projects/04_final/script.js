@@ -1,14 +1,14 @@
 /* get time */
-
-
 function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    m = checkTime(m);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m 
-    var t = setTimeout(startTime, 500);
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var ampm = h >= 12 ? 'pm' : 'am';
+  h = h % 12;
+  h = h ? h : 12; // the hour '0' should be '12'
+  m = m < 10 ? '0'+ m : m ;
+  document.getElementById('txt').innerHTML = h + ':' + m + ' ' + ampm;
+  var t = setTimeout(startTime, 500);
 }
 
 
@@ -26,12 +26,12 @@ var midday = document.getElementById("midday");
 var night = document.getElementById("night");
 
 if (t < 10) {
-    document.write("up early enough to get breakfast? good for you!");
+	document.getElementById("demo").innerHTML = "up early enough to get breakfast? good for you!";
     morning.style.display = "block";
     midday.style.display = "none";
     night.style.display = "none";
 } else if (t < 20) {
-    document.write("it's a good time for a snack!");
+    document.getElementById("demo").innerHTML = "it's a good time for a snack!";
     morning.style.display = "none";
     midday.style.display = "block";
     night.style.display = "none";
@@ -97,26 +97,3 @@ $(document).ready(function(){
       }
     });
 });
-
-/*
-$(document).ready(function() {
-            $('.eggs').click(function() {
-                $(this).fadeOut('fast');
-                    });
-                });
-        $(document).ready(function() {
-            $('.bacon').click(function() {
-                $(this).fadeOut('fast');
-                    });
-                });
-        $(document).ready(function() {
-            $('.waffle').click(function() {
-                $(this).fadeOut('fast');
-                    });
-                });
-        $(document).ready(function() {
-            $('.fruit').click(function() {
-                $(this).fadeOut('fast');
-                    });
-                });
-*/
