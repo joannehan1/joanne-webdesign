@@ -11,11 +11,7 @@ section {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-}
-
-.open {
   position: absolute;
-  z-index: -10;
 }
 
 div {
@@ -23,38 +19,30 @@ div {
 	font-color: black;
 }
 
-#morning {
-    width: 100px;
-    height: 100px;
-    background: #ccc;
-}
-
-#midday {
-    width: 100px;
-    height: 100px;
-    background: #ccc;
-}
-
-#night {
-	width: 100px;
+img {
+  width: 100px;
+  z-index: 0;
 }
 
 .microwave {
   width: 655px;
   height: 130px;
   background: url(images/closed.png) -137px 0px;
+  z-index: 20;
 }
 
 .freezer {
   width: 655px;
   height: 155px;
   background: url(images/closed.png) -137px -130px;
+  z-index: 20;
 }
 
 .fridge {
   width: 655px;
   height: 315px;
   background: url(images/closed.png) -137px -285px;
+  z-index: 20;
 }
 
 #microwave {
@@ -74,52 +62,6 @@ div {
     height: 315px;
     background: url(images/open.png) -135px -285px;
 }
-
-/*
-.openmicrowave {
-  width: 655px;
-  height: 130px;
-  background: url(images/open.png) -137px 0px;
-}
-
-.openfreezer {
-  width: 655px;
-  height: 155px;
-  background: url(images/open.png) -137px -130px;
-}
-
-.openfridge {
-  width: 655px;
-  height: 315px;
-  background: url(images/open.png) -137px -285px;
-}
-*/
-
-/*
- .microwave {
-    width: 300px;
-    height: 150px;
-    background: transparent;
-    padding: 10px;
-    border: 1px solid blue;
-}
-
- .freezer {
-    width: 300px;
-    height: 150px;
-    background: transparent;
-    padding: 10px;
-    border: 1px solid red;
-}
-
- .fridge {
-    width: 300px;
-    height: 350px;
-    background: transparent;
-    padding: 10px;
-    border: 1px solid green;
-}
-*/
 
 #txt {
 	color: red;
@@ -199,100 +141,3 @@ div {
   }}
 
 /* end of clock flicker */
-
-/*
-html {
-	background-color:#e5efff;
-}
-
-html, body {
-	margin: 0;
-	padding-top: 7%;
-	padding-bottom: 7%;
-	position: relative;
-	min-height: 100%;
-	font-size: 20px;
-	font-family: Quicksand, Arial;
-	font-weight: 300;
-	text-align: center;
-}
-
-h1 {
-	color: #000;
-}
-
-.container {
-	width: 80%;
-	margin: auto;
-	min-width: 1100px;
-	max-width: 1300px;
-	position: relative;
-}
-
-@media (min-width: 750px) and (max-width: 970px){
-	.container {
-		width: 100%;
-		min-width: 750px;
-	}
-}
-
-.sortable-ghost {
-	opacity: .2;
-}
-
-img {
-	border: 0;
-	vertical-align: middle;
-	width: 100px;
-	height: 100px;
-}
-
-form {
-	padding-top: 50px;
-}
-
-
-.tilefirst {
-	width: 90%;
-	min-width: 245px;
-	padding: 40px 3px;
-	text-align: center;
-	margin-top: 15px;
-	margin-right: 30px;
-	background-color: transparent;
-	display: inline-block;
-	vertical-align: top;
-}
-
-
-.tile {
-	width: 23%;
-	min-width: 245px;
-	padding: 40px 40px;
-	text-align: center;
-	margin-top: 15px;
-	margin-left: 5px;
-	margin-right: 30px;
-	background: url(images/lined.png);
-	display: inline-block;
-	vertical-align: top;
-	border:1px solid rgba(0,0,0,0.3);
-    box-shadow:rgba(0,0,0,0.07)7px 7px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-
-	.tile__list {
-		margin-top: 10px;
-	}
-		.tile__list:last-child {
-			margin-right: 0;
-			min-height: 80px;
-		}
-
-		.tile__list img {
-			cursor: move;
-			margin: 10px;
-			border-radius: 100%;
-		}*/

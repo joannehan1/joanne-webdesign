@@ -42,38 +42,18 @@ if (t < 10) {
     night.style.display = "block";
 }
 
-$(document).ready(function() {
-	$('.fridge').mouseenter(function() {
-		//$('.fridge').hide();
-		$('#fridge').show();
-		console.log('mouse detected')
-	});
-	$('.fridge').mouseleave(function() {
-		//$('.fridge').show();
-		$('#fridge').hide();
-		console.log('mouse gone')
-	})
-});
-
-$(document).ready(function() {
-	$('.freezer').mouseenter(function() {
-		//$('.fridge').hide();
-		$('#freezer').show();
-		console.log('mouse detected')
-	});
-	$('.freezer').mouseleave(function() {
-		//$('.fridge').show();
-		$('#freezer').hide();
-		console.log('mouse gone')
-	});
-});
-
 $(document).ready(function(){
     startTime();
     /* be able to drag food */
     $( "#morning" ).draggable();
     $( "#midday" ).draggable();
     $( "#night" ).draggable();
+    
+    $( ".muffin" ).draggable();
+    $( ".pbj" ).draggable();
+    $( ".pizza" ).draggable();
+
+
     $( "#microwave" ).hide();
 
     /* be able to drop foods into appliances */
@@ -82,6 +62,8 @@ $(document).ready(function(){
         console.log("heating");
         $(this).hide();
 		$('#microwave').show();
+		$('#freezer').hide();
+		$('#fridge').hide();
       }
     });
 
@@ -90,6 +72,8 @@ $(document).ready(function(){
         console.log( "freezing" );
         $( "#microwave" ).hide();
         $('.microwave').show();
+        $('#freezer').show();
+        $('#fridge').hide();
       }
     });
 
@@ -98,12 +82,8 @@ $(document).ready(function(){
         console.log( "chilling" );
         $( "#microwave" ).hide();
         $('.microwave').show();
+        $('#freezer').hide();
+        $('#fridge').show();
       }
     });
 });
-
-
-// popup window for each page end
-
-
-
