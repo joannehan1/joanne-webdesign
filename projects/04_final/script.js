@@ -58,8 +58,10 @@ $(document).ready(function(){
     $( ".pbj" ).draggable();
     $( ".pizza" ).draggable();
 
-    // make microwave off at first
+    // make everything off/closed at first
     $( "#microwave" ).hide();
+    $( "#freezer" ).hide();
+    $( "#fridge" ).hide();
 
     $( ".muffin" ).dblclick(function() {
         $(this).fadeOut('fast');
@@ -76,8 +78,11 @@ $(document).ready(function(){
       drop: function() {
         console.log("heating");
 		$('#microwave').show();
+		$('.microwave').hide();
 		$('#freezer').hide();
+		$('.freezer').show();
 		$('#fridge').hide();
+		$('.fridge').show();
       }
     });
 
@@ -85,8 +90,11 @@ $(document).ready(function(){
       drop: function() {
         console.log( "freezing" );
         $('#microwave').hide();
+        $('.microwave').show();
         $('#freezer').show();
+        $('.freezer').hide();
         $('#fridge').hide();
+        $('.fridge').show();
       }
     });
 
@@ -94,8 +102,11 @@ $(document).ready(function(){
       drop: function() {
         console.log( "chilling" );
         $( "#microwave" ).hide();
+        $('.microwave').show();
         $('#freezer').hide();
+        $('.freezer').show();
         $('#fridge').show();
+        $('.fridge').hide();
       }
     });
 });

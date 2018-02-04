@@ -16,16 +16,16 @@ div {
 img {
   width: 100px;
   position: absolute;
-  z-index: 0;
+  z-index: 10;
   left: 10px;
 }
 
 .microwave {
-  width: 328px;
+  width: 655px;
   height: 130px;
   background: url(images/closed.png) -137px 0px;
   position: absolute;
-  margin-left: auto 328px;
+  margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
@@ -33,12 +33,12 @@ img {
 }
 
 .freezer {
-  width: 328px;
+  width: 655px;
   height: 155px;
   background: url(images/closed.png) -137px -130px;
   position: absolute;
   margin-top: 130px;
-  margin-left: auto 328pc;
+  margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
@@ -46,12 +46,12 @@ img {
 }
 
 .fridge {
-  width: 328px;
+  width: 655px;
   height: 315px;
   background: url(images/closed.png) -137px -285px;
   position: absolute;
   margin-top: 285px;
-  margin-left: auto 328px;
+  margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
@@ -63,7 +63,11 @@ img {
     height: 130px;
     background: url(images/microwave.png) -137px 0px;
     position: absolute;
-    z-index: -20;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
 }
 
 #freezer {
@@ -71,7 +75,12 @@ img {
     height: 155px;
     background: url(images/open.png) -135px -130px;
     position: absolute;
-    z-index: -20;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
 }
 
 #fridge {
@@ -79,9 +88,52 @@ img {
     height: 315px;
     background: url(images/open.png) -135px -285px;
     position: absolute;
-    z-index: -20;
+    margin-top: 285px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+/*
+#doorlessmicrowave {
+    width: 655px;
+    height: 130px;
+    background: url(images/microwave.png) -137px 0px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
+#doorlessfreezer {
+    width: 655px;
+    height: 155px;
+    background: url(images/open.png) -135px -130px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#doorlessfridge {
+    width: 655px;
+    height: 315px;
+    background: url(images/open.png) -135px -285px;
+    position: absolute;
+    margin-top: 285px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+*/
 #txt {
 	color: red;
 	font-family: 'Supermercado One', cursive;
