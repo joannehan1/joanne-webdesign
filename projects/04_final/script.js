@@ -36,7 +36,7 @@ if (t < 10) {
     midday.style.display = "block";
     night.style.display = "none";
 } else {
-    document.write("do you know what time it is?");
+    document.getElementById("demo").innerHTML = "do you know what time it is?";
     morning.style.display = "none";
     midday.style.display = "none";
     night.style.display = "block";
@@ -49,6 +49,11 @@ $(document).ready(function(){
     $( "#midday" ).draggable();
     $( "#night" ).draggable();
     
+    $( ".bmuffin1" ).draggable();
+    $( ".bmuffin2" ).draggable();
+    $( ".bmuffin3" ).draggable();
+    $( ".bmuffin4" ).draggable();
+    $( ".bmuffin5" ).draggable();
     $( ".muffin" ).draggable();
     $( ".pbj" ).draggable();
     $( ".pizza" ).draggable();
@@ -70,7 +75,6 @@ $(document).ready(function(){
     $( ".microwave" ).droppable({
       drop: function() {
         console.log("heating");
-        $(this).hide();
 		$('#microwave').show();
 		$('#freezer').hide();
 		$('#fridge').hide();
@@ -80,8 +84,7 @@ $(document).ready(function(){
     $( ".freezer" ).droppable({
       drop: function() {
         console.log( "freezing" );
-        $( "#microwave" ).hide();
-        $('.microwave').show();
+        $('#microwave').hide();
         $('#freezer').show();
         $('#fridge').hide();
       }
@@ -91,7 +94,6 @@ $(document).ready(function(){
       drop: function() {
         console.log( "chilling" );
         $( "#microwave" ).hide();
-        $('.microwave').show();
         $('#freezer').hide();
         $('#fridge').show();
       }

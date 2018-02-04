@@ -9,41 +9,52 @@
   text-align: center;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-}
-
 div {
 	margin: auto;
 }
 
 img {
   width: 100px;
+  position: absolute;
   z-index: 0;
+  left: 10px;
 }
 
 .microwave {
-  width: 655px;
+  width: 328px;
   height: 130px;
   background: url(images/closed.png) -137px 0px;
+  position: absolute;
+  margin-left: auto 328px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   z-index: 20;
 }
 
 .freezer {
-  width: 655px;
+  width: 328px;
   height: 155px;
   background: url(images/closed.png) -137px -130px;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: auto 328pc;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   z-index: 20;
 }
 
 .fridge {
-  width: 655px;
+  width: 328px;
   height: 315px;
   background: url(images/closed.png) -137px -285px;
+  position: absolute;
+  margin-top: 285px;
+  margin-left: auto 328px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   z-index: 20;
 }
 
@@ -51,18 +62,24 @@ img {
     width: 655px;
     height: 130px;
     background: url(images/microwave.png) -137px 0px;
+    position: absolute;
+    z-index: -20;
 }
 
 #freezer {
     width: 655px;
     height: 155px;
     background: url(images/open.png) -135px -130px;
+    position: absolute;
+    z-index: -20;
 }
 
 #fridge {
     width: 655px;
     height: 315px;
     background: url(images/open.png) -135px -285px;
+    position: absolute;
+    z-index: -20;
 }
 
 #txt {
