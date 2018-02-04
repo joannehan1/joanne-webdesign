@@ -11,6 +11,7 @@
 
 div {
 	margin: auto;
+  cursor: url(hand.cur);
 }
 
 img {
@@ -45,6 +46,8 @@ img {
   z-index: 20;
 }
 
+
+
 .fridge {
   width: 655px;
   height: 315px;
@@ -73,7 +76,7 @@ img {
 #freezer {
     width: 655px;
     height: 155px;
-    background: url(images/open.png) -135px -130px;
+    background: url(images/open.png) -136px -130px;
     position: absolute;
     margin-top: 130px;
     margin-left: auto;
@@ -86,7 +89,7 @@ img {
 #fridge {
     width: 655px;
     height: 315px;
-    background: url(images/open.png) -135px -285px;
+    background: url(images/open.png) -136px -285px;
     position: absolute;
     margin-top: 285px;
     margin-left: auto;
@@ -95,52 +98,14 @@ img {
     right: 0;
     z-index: 0;
 }
-/*
-#doorlessmicrowave {
-    width: 655px;
-    height: 130px;
-    background: url(images/microwave.png) -137px 0px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 20;
-}
 
-#doorlessfreezer {
-    width: 655px;
-    height: 155px;
-    background: url(images/open.png) -135px -130px;
-    position: absolute;
-    margin-top: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 0;
-}
-
-#doorlessfridge {
-    width: 655px;
-    height: 315px;
-    background: url(images/open.png) -135px -285px;
-    position: absolute;
-    margin-top: 285px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 0;
-}
-*/
 #txt {
 	color: red;
 	font-family: 'Supermercado One', cursive;
 	text-align: center;
 	font-size: 4em;
 	font-style: italic;
-	margin-top: 5%;
+	padding-top: 5%;
 }
 
 p {

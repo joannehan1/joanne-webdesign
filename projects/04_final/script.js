@@ -25,8 +25,13 @@ var morning = document.getElementById("morning");
 var midday = document.getElementById("midday");
 var night = document.getElementById("night");
 
-if (t < 10) {
-	document.getElementById("demo").innerHTML = "up early enough to get breakfast? good for you!";
+if (t < 5) {
+	document.getElementById("demo").innerHTML = "do you know what time it is?";
+    morning.style.display = "none";
+    midday.style.display = "none";
+    night.style.display = "block";
+} else if (t < 11) {
+    document.getElementById("demo").innerHTML = "up early enough to get breakfast? good for you!";
     morning.style.display = "block";
     midday.style.display = "none";
     night.style.display = "none";
@@ -62,6 +67,39 @@ $(document).ready(function(){
     $( "#microwave" ).hide();
     $( "#freezer" ).hide();
     $( "#fridge" ).hide();
+
+    //open/activate with a click
+    $( ".microwave" ).click(function() {
+        $(this).hide();
+        $("#microwave").show();
+    });
+    $( ".freezer" ).click(function() {
+        $(this).hide();
+        $("#freezer").show();
+    });
+    $( ".fridge" ).click(function() {
+        $(this).hide();
+        $("#fridge").show();
+    });
+
+    //close/turn off with a click
+    $( "#microwave" ).click(function() {
+        $(this).hide();
+        $(".microwave").show();
+    });
+    $( "#freezer" ).click(function() {
+        $(this).hide();
+        $(".freezer").show();
+    });
+    $( "#fridge" ).click(function() {
+        $(this).hide();
+        $(".fridge").show();
+    });
+
+
+    $( "#freezer" ).hide();
+    $( "#fridge" ).hide();
+
 
     $( ".muffin" ).dblclick(function() {
         $(this).fadeOut('fast');
