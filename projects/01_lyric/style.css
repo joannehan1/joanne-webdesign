@@ -23,10 +23,11 @@ body {
 }
 
 /* index page */
-span {
+a:link {
 	font-family: 'chaennie';
-	color: rgba(0,0,255);
+	color: pink;
   font-size: 2em;
+  text-decoration: none;
 }
 /* end index page*/
 
@@ -35,30 +36,17 @@ span {
   line-height: 100%;
 }
 
-a:link {
-  /* Applies to all unvisited links */
-  text-decoration: none;
-  font-family: helvetica;
-  font-weight: bold;
-  font-size: small;
-  color: #fff;
-  } 
-a:visited {
-  /* Applies to all visited links */
-  text-decoration:  none;
-  } 
 a:hover {
   /* Applies to links under the pointer */
-  text-decoration: underline;
   font-weight: bold;
-  color: #000;
+  color: #fff;
+  text-decoration: none;
   } 
+
 a:activated {
-  /* Applies to activated links */
-  text-decoration: underline;
-  font-weight: bold;
-  background-color: black;
-  color: white;
+  /* Applies to links under the pointer */
+  color: pink;
+  text-decoration: none;
   } 
 
 
