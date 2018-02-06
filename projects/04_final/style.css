@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Supermercado+One');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
   margin: 0;
   box-sizing: border-box;
   justify-content: center;
-  font-family:'Roboto';
+  font-family:'Lato';
   text-align: center;
 }
 
@@ -325,7 +325,7 @@ p {
 
 /* end of clock flicker */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
     #sorry {
         display: block;
     }
