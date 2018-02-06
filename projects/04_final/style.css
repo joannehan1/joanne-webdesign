@@ -90,6 +90,12 @@ a:hover {
 }
 /* food description */
 
+.bmuffinf {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
 .bmuffind {
   position: absolute;
   right: 25%;

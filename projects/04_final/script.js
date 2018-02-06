@@ -106,6 +106,7 @@ $(document).ready(function(){
 
     $( "#freezer" ).hide();
     $( "#fridge" ).hide();
+    $(".bmuffinf").hide();
     $(".bmuffind").hide(); //banana muffin
     $(".pbjd").hide(); //pbj
     $(".muffind").hide(); // muffin part 2
@@ -117,36 +118,43 @@ $(document).ready(function(){
 
     /* nom nom */
     $( ".bmuffin1" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(this).fadeOut('fast');
         $(".gone").show();
         });
     $( ".bmuffin2" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(".gone").show();
         $(this).fadeOut('fast');
         });
     $( ".bmuffin3" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(".gone").show();
         $(this).fadeOut('fast');
         });
     $( ".bmuffin4" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(".gone").show();
         $(this).fadeOut('fast');
         });
     $( ".bmuffin5" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(this).fadeOut('fast');
         $(".gone").show();
         });
     $( ".bmuffin6" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(".gone").show();
         $(this).fadeOut('fast');
         });
     $( ".bmuffin7" ).dblclick(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide();
         $(".gone").show();
         $(this).fadeOut('fast');
@@ -173,7 +181,13 @@ $(document).ready(function(){
         });
 
     /* description? */
+    $( ".bmuffin7" ).hover(function() {
+        $(".bmuffind").hide();
+        $(".bmuffinf").show();
+        $(".gone").hide();
+        });
     $( ".bmuffin4" ).hover(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").show();
         $(".gone").hide();
         });
@@ -191,7 +205,7 @@ $(document).ready(function(){
     $( ".pizza" ).hover(function() {
         $(".pizzad").show();
         $(".bananad").hide();
-        $(".explanation").hide();
+        $(".gone").hide();
         });
     $( ".banana" ).hover(function() {
         $(".bananad").show();
@@ -199,6 +213,7 @@ $(document).ready(function(){
         $(".bananano").hide();
         });
      $( ".microwave" ).hover(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide(); //banana muffin
         $(".pbjd").hide(); //pbj
         $(".muffind").hide(); // muffin part 2
@@ -209,6 +224,7 @@ $(document).ready(function(){
         $(".bananano").hide(); // banana no
         });
      $( "#fridge" ).hover(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide(); //banana muffin
         $(".pbjd").hide(); //pbj
         $(".muffind").hide(); // muffin part 2
@@ -219,6 +235,7 @@ $(document).ready(function(){
         $(".bananano").hide(); // banana no
         });
      $( "#freezer" ).hover(function() {
+        $(".bmuffinf").hide();
         $(".bmuffind").hide(); //banana muffin
         $(".pbjd").hide(); //pbj
         $(".muffind").hide(); // muffin part 2
@@ -236,6 +253,7 @@ $(document).ready(function(){
     $( ".microwave" ).droppable({
       drop: function() {
         console.log("heating");
+        $(".bmuffinf").hide();
         $(".bmuffind").hide(); //banana muffin
         $(".pbjd").hide(); //pbj
         $(".muffind").hide(); // muffin part 2
