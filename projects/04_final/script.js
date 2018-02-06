@@ -59,9 +59,12 @@ $(document).ready(function(){
     $( ".bmuffin3" ).draggable();
     $( ".bmuffin4" ).draggable();
     $( ".bmuffin5" ).draggable();
+    $( ".bmuffin6" ).draggable();
+    $( ".bmuffin7" ).draggable();
     $( ".muffin" ).draggable();
     $( ".pbj" ).draggable();
     $( ".pizza" ).draggable();
+    $( ".banana" ).draggable();
 
     // make everything off/closed at first
     $( "#microwave" ).hide();
@@ -96,19 +99,101 @@ $(document).ready(function(){
         $(".fridge").show();
     });
 
-
     $( "#freezer" ).hide();
     $( "#fridge" ).hide();
+    $(".description1").hide(); //banana muffin
+    $(".description2").hide(); //pbj
+    $(".description3").hide(); // muffin part 2
+    $(".description4").hide(); // pizza 
+    $(".description5").hide(); // banana 
+    $(".explanation").hide(); // i ate it
+    $(".no1").hide(); // muffin no
+    $(".no2").hide(); // banana no
 
-
-    $( ".muffin" ).dblclick(function() {
+    /* nom nom */
+    $( ".bmuffin1" ).dblclick(function() {
+        $(".description1").hide();
+        $(this).fadeOut('fast');
+        $(".explanation").show();
+        });
+    $( ".bmuffin2" ).dblclick(function() {
+        $(".description1").hide();
+        $(".explanation").show();
         $(this).fadeOut('fast');
         });
+    $( ".bmuffin3" ).dblclick(function() {
+        $(".description1").hide();
+        $(".explanation").show();
+        $(this).fadeOut('fast');
+        });
+    $( ".bmuffin4" ).dblclick(function() {
+        $(".description1").hide();
+        $(".explanation").show();
+        $(this).fadeOut('fast');
+        });
+    $( ".bmuffin5" ).dblclick(function() {
+        $(".description1").hide();
+        $(this).fadeOut('fast');
+        $(".explanation").show();
+        });
+    $( ".bmuffin6" ).dblclick(function() {
+        $(".description1").hide();
+        $(".explanation").show();
+        $(this).fadeOut('fast');
+        });
+    $( ".bmuffin7" ).dblclick(function() {
+        $(".description1").hide();
+        $(".explanation").show();
+        $(this).fadeOut('fast');
+        });
+    $( ".muffin" ).dblclick(function() {
+        $(".description3").hide();
+        $(".no1").show();
+        });
     $( ".pbj" ).dblclick(function() {
+        $(".description2").hide();
+        $(".explanation").show();
         $(this).fadeOut('fast');
         });
     $( ".pizza" ).dblclick(function() {
+        $(".description4").hide();
+        $(".explanation").show();
         $(this).fadeOut('fast');
+        });
+    $( ".banana" ).dblclick(function() {
+        $(".description5").hide();
+        $(".no2").show();
+        });
+
+    /* description? */
+    $( ".bmuffin4" ).hover(function() {
+        $(".description1").show();
+        $('.description1').delay(5000).fadeOut(400);
+        $(".explanation").hide();
+        });
+    $( ".pbj" ).hover(function() {
+        $(".description2").show();
+        $('.description2').delay(5000).fadeOut(400);
+        $(".description3").hide();
+        $(".explanation").hide();
+        });
+    $( ".muffin" ).hover(function() {
+        $(".description3").show();
+        $('.description3').delay(5000).fadeOut(400);
+        $(".description2").hide();
+        $(".no1").hide();
+        });
+    $( ".pizza" ).hover(function() {
+        $(".description4").show();
+        $('.description4').delay(5000).fadeOut(400);
+        $(".description5").hide();
+        $(".explanation").hide();
+        });
+    $( ".banana" ).hover(function() {
+        $(".description5").show();
+        $('.description5').delay(5000).fadeOut(400);
+        $(".description4").hide();
+        $(".no2").hide();
         });
 
     /* be able to drop foods into appliances */
