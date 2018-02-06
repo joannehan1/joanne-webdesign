@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Supermercado+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   margin: 0;
   box-sizing: border-box;
   justify-content: center;
   font-color: black;
-  font-family:'Supermercado One', cursive;
+  font-family:'Roboto';
   text-align: center;
 }
 
@@ -21,11 +22,127 @@ img {
 }
 
 .pizza {
-  width: 100px;
   top: 200px;
   left: 37%;
   position: absolute;
   z-index: 10;
+}
+
+
+/* introduction */
+a:hover {
+  color: red;
+}
+
+.apple {
+  top: 550px;
+  left: 37%;
+  position: absolute;
+  z-index: 10;
+}
+
+.burger {
+  top: 550px;
+  left: 37%;
+  position: absolute;
+  z-index: 10;
+}
+
+.hotdog {
+  top: 550px;
+  left: 37%;
+  position: absolute;
+  z-index: 10;
+}
+
+
+.intro {
+  position: absolute;
+  right: 25%;
+  width: 315px;
+}
+
+.fridgeinfo {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.gone {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.skip {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  right: 25%;
+  width: 300px;
+  z-index: 20;
+}
+
+.mtext {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+/* food description */
+
+.bmuffind {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.pbjd {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.muffind {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.pizzad {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.bananad {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.gone {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.muffinno {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.bananano {
+  position: absolute;
+  right: 25%;
+  width: 300px;
+}
+
+.done {
+  position: absolute;
+  top: 500px;
+  right: 25%;
+  width: 300px;
 }
 
 .microwave {
@@ -37,7 +154,7 @@ img {
   margin-right: auto;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 0;
   cursor: pointer;
 }
 
@@ -53,55 +170,6 @@ img {
   right: 0;
   z-index: 20;
   cursor: pointer;
-}
-
-/* food description */
-.description1 {
-  position: absolute;
-  right: 50%;
-  width: 300px;
-}
-
-.description2 {
-  position: absolute;
-  right: 50%;
-  width: 300px;
-}
-
-.description3 {
-  position: absolute;
-  right: 50%;
-  width: 300px;
-}
-
-.description4 {
-  position: absolute;
-  right: 30%;
-  width: 300px;
-}
-
-.description5 {
-  position: absolute;
-  right: 30%;
-  width: 300px;
-}
-
-.explanation {
-  position: absolute;
-  right: 50%;
-  width: 300px;
-}
-
-.no1 {
-  position: absolute;
-  right: 50%;
-  width: 300px;
-}
-
-.no2 {
-  position: absolute;
-  right: 50%;
-  width: 300px;
 }
 
 .fridge {
@@ -127,7 +195,7 @@ img {
     margin-right: auto;
     left: 0;
     right: 0;
-    z-index: 0;
+    z-index: 20;
     cursor: pointer;
 }
 
