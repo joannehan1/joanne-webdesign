@@ -2,29 +2,31 @@
 
 html {
 	background-color: #edfcff;
-	font-family: sans-serif, monospace;
+	color: #33d661;
+	font-family: 'Shrikhand', cursive;
 }
 
 h1 {
 	color: #4286f4;
 	text-align: center;
-	font-family: 'Shrikhand', cursive;
 }
 
 h2 {
 	color: #f45f42;
 	text-align: center;
-	font-family: 'Shrikhand', cursive;
 }
 
 h3 {
 	color: #f4df42;
 	text-align: center;
-	font-family: 'Shrikhand', cursive;
 }
 
 ol {
 	margin-left: 40%
+}
+
+a {
+	font-family: Helvetica;
 }
 
 a:hover {

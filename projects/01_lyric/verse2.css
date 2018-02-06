@@ -53,6 +53,24 @@ section{
     align-items: space-between;
 }
 
+.vr {
+    width:1px;
+    height: 200px;
+    margin-top: -25%;
+    margin-bottom: 25%;
+    background-color:#ccc;
+    margin-left: 50%;
+}
+
+.vrw {
+    width:1px;
+    height: 200px;
+    margin-top: -25%;
+    margin-bottom: 25%;
+    background-color:#fff;
+    margin-left: 50%;
+}
+
 .flower-image{
     max-height: 140px;
     width: auto;
