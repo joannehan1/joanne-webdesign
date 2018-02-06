@@ -26,22 +26,22 @@ var midday = document.getElementById("midday");
 var night = document.getElementById("night");
 
 if (t < 5) {
-	document.getElementById("demo").innerHTML = "do you know what time it is?";
+	document.getElementById("demo").innerHTML = "Do you know what time it is?";
     morning.style.display = "none";
     midday.style.display = "none";
     night.style.display = "block";
 } else if (t < 11) {
-    document.getElementById("demo").innerHTML = "up early enough to get breakfast? good for you!";
+    document.getElementById("demo").innerHTML = "Up early enough to get breakfast? good for you!";
     morning.style.display = "block";
     midday.style.display = "none";
     night.style.display = "none";
 } else if (t < 20) {
-    document.getElementById("demo").innerHTML = "it's a good time for a snack!";
+    document.getElementById("demo").innerHTML = "It's a good time for a snack!";
     morning.style.display = "none";
     midday.style.display = "block";
     night.style.display = "none";
 } else {
-    document.getElementById("demo").innerHTML = "do you know what time it is?";
+    document.getElementById("demo").innerHTML = "Do you know what time it is?";
     morning.style.display = "none";
     midday.style.display = "none";
     night.style.display = "block";
@@ -126,20 +126,20 @@ $(document).ready(function(){
     $( ".bmuffin2" ).dblclick(function() {
         $(".bmuffinf").hide();
         $(".bmuffind").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
     $( ".bmuffin3" ).dblclick(function() {
         $(".bmuffinf").hide();
         $(".bmuffind").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
     $( ".bmuffin4" ).dblclick(function() {
         $(".bmuffinf").hide();
         $(".bmuffind").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
     $( ".bmuffin5" ).dblclick(function() {
         $(".bmuffinf").hide();
@@ -150,14 +150,14 @@ $(document).ready(function(){
     $( ".bmuffin6" ).dblclick(function() {
         $(".bmuffinf").hide();
         $(".bmuffind").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
     $( ".bmuffin7" ).dblclick(function() {
         $(".bmuffinf").hide();
         $(".bmuffind").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
 
     $( ".muffin" ).dblclick(function() {
@@ -166,14 +166,14 @@ $(document).ready(function(){
         });
     $( ".pbj" ).dblclick(function() {
         $(".pbjd").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
 
     $( ".pizza" ).dblclick(function() {
         $(".pizzad").hide();
-        $(".gone").show();
         $(this).fadeOut('fast');
+        $(".gone").show();
         });
     $( ".banana" ).dblclick(function() {
         $(".bananad").hide();
@@ -186,7 +186,7 @@ $(document).ready(function(){
         $(".bmuffinf").show();
         $(".gone").hide();
         });
-    $( ".bmuffin4" ).hover(function() {
+    $( ".bmuffin1" ).hover(function() {
         $(".bmuffinf").hide();
         $(".bmuffind").show();
         $(".gone").hide();

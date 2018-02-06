@@ -26,7 +26,7 @@ var midday = document.getElementById("midday");
 var night = document.getElementById("night");
 
 if (t < 24) {
-    document.getElementById("demo").innerHTML = "aka the perfect time to learn something new!";
+    document.getElementById("demo").innerHTML = "AKA the perfect time to learn something new!";
     midday.style.display = "block";
 };
 
@@ -54,7 +54,6 @@ $(document).ready(function(){
         $('#microwave').delay(2000).fadeOut('fast');
         $('.microwave').delay(2000).fadeIn('fast');
         $('.done').delay(2000).fadeIn('fast');
-        $('.done').delay(4000).fadeOut('fast');
     });
 
     $( ".freezer" ).click(function() {
@@ -66,6 +65,7 @@ $(document).ready(function(){
         $("#fridge").show();
         $(".fridgeinfo").show();
         $( ".intro" ).hide();
+        $( ".gone" ).hide();
     });
 
     //close/turn off with a click

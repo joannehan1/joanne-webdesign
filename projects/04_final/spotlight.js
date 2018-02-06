@@ -22,7 +22,7 @@ function SpotLight(element) {
             start_y: this.y,
             x: this.x,
             y: this.y,
-            aperture: "50%",
+            aperture: "40%",
             duration: 1000,
             done: function() {}
           }, opts);
@@ -37,7 +37,7 @@ function SpotLight(element) {
             duration: obj.duration,
             step: function() {
               var style, _i, _len, _ref;
-              _ref = ["-moz-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) " + this.aperture + ", rgba(0,0,0,0.8) 100%)", "-webkit-gradient(radial, " + this.x + "px " + this.y + "px, 0px, " + this.x + "px " + this.y + "px, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(" + this.aperture + ",rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.8)))", "-webkit-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) " + this.aperture + ",rgba(0,0,0,0.8) 100%)", "-o-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) " + this.aperture + ",rgba(0,0,0,0.8) 100%)", "-ms-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) " + this.aperture + ",rgba(0,0,0,0.8) 100%)", "radial-gradient(ellipse at " + this.x + "px " + this.y + "px,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) " + this.aperture + ",rgba(0,0,0,0.8) 100%)"];
+              _ref = ["-moz-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) " + this.aperture + ", rgba(0,0,0,0.4) 100%)", "-webkit-gradient(radial, " + this.x + "px " + this.y + "px, 0px, " + this.x + "px " + this.y + "px, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(" + this.aperture + ",rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,0.4)))", "-webkit-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) " + this.aperture + ",rgba(0,0,0,0.4) 100%)", "-o-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) " + this.aperture + ",rgba(0,0,0,0.4) 100%)", "-ms-radial-gradient(" + this.x + "px " + this.y + "px, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) " + this.aperture + ",rgba(0,0,0,0.4) 100%)", "radial-gradient(ellipse at " + this.x + "px " + this.y + "px,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) " + this.aperture + ",rgba(0,0,0,0.4) 100%)"];
               for (_i = 0, _len = _ref.length; _i < _len; _i++) {
                 style = _ref[_i];
                 element.css({
@@ -54,4 +54,4 @@ function SpotLight(element) {
       }
 var spotLight = new SpotLight($("#spotLight"))
 spotLight.show();
-spotLight.move({ x: 500, y: 500 });
+spotLight.move({ x: 750, y: 500 });
