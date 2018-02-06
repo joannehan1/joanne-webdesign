@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   justify-content: center;
-  color: black;
   font-family:'Roboto';
   text-align: center;
 }
@@ -192,6 +191,14 @@ a:hover {
   cursor: pointer;
 }
 
+#sorry {
+  background-color: white;
+  font-size: 2em;
+  position:absolute;
+  z-index: 20;
+  display: none;
+}
+
 #microwave {
     width: 655px;
     height: 130px;
@@ -317,3 +324,9 @@ p {
   }}
 
 /* end of clock flicker */
+
+@media only screen and (max-width: 400px) {
+    #sorry {
+        display: block;
+    }
+}
