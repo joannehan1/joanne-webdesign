@@ -2,6 +2,7 @@ body {
 	counter-reset: section;
 	text-align: center;
 	background-color: #c2bfae;
+	width: 50%;
 }
 
 @keyframes colora {
@@ -89,11 +90,18 @@ h1 {
 }
 
 .info {
-	z-index: -10;
-	bottom: 15px;
 	position: absolute;
+	z-index: -10;
+	bottom: 10%;
 	text-align: left;
 	font-family: Helvetica, sans-serif;
+}
+
+.image {
+	position: fixed;
+	top: 0px;
+	z-index: 20;
+	right: 15px;
 }
 
 .little {
