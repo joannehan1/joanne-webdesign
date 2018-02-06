@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+html {
+	background-color: #edfcff;
+	color: #33d661;
+	font-family: 'Shrikhand', cursive;
+	margin: 5%;
+}
+
+h1 {
+	color: #4286f4;
+	text-align: center;
+}
+
+h2 {
+	color: #f45f42;
+	text-align: center;
+}
+
+h3 {
+	color: #f4df42;
+	text-align: center;
+}
+
+ol {
+	margin-left: 40%
+}
+
+a {
+	font-family: Helvetica;
+}
+
+a:hover {
+	color: red;
+	font-size: 1.5em;
+}
